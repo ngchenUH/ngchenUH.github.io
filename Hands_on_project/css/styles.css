@@ -1,0 +1,553 @@
+/*  
+Final project CSS file
+*/
+       
+
+
+/*Primary color pallette:
+
+#cda874, light brown for background
+#7c851c, muted/less obnoxious green color
+
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for images */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+body {
+	background-color: #886236;
+}
+
+/*Style rules for mobile viewport*/
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: -3vw; 
+    top: -3vw;  
+}
+  
+.menu-icon div {
+    height: 10.8vw;
+    width: 10.8vw;
+    background-color: #7c851c;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 7vw;
+    text-decoration: none;
+    padding:3%;
+    display: block;
+	
+}
+
+/*Hide tab-desk class*/
+
+.tab-desk {
+    display: none;
+}
+
+#mobile-nav a {
+	border-bottom: 1px solid #e5e9fc;
+}
+
+#mobile-nav {
+    display: none;
+	border-bottom: none;
+}
+
+/*Mobile header content */
+header {
+	text-align: left;
+	font-size: 1.5em;
+	color: #e1d443;
+	font-family: 'Lora';
+}
+
+header h1 {
+	font-style: italic;
+	font-weight: bold;
+		font-size: 9vw;
+}
+
+
+/*Nav color*/
+nav {
+	background-color: #7c851c;
+}
+
+
+/*Looked up "how to make inline block list elements evenly take up space on the screen html" 
+on google, and learned a bit about flex containers from the ai overview.*/
+
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	display: block;
+	flex: 1;
+	font-size: 2em;
+	border-top: 1px solid #e5e9fc;
+	border-inline-end: 1px solid #e5e9fc;
+	border-inline-start: 1px solid #e5e9fc;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/*Style rules for main content*/
+main {
+	padding: 0%;
+	background-color: #cda874;
+	overflow: auto;
+	font-family: Verdana, Arial, sans-serif, Roboto;
+}
+
+main p {
+	padding: 2%;
+	font-size: 1.7vw;
+	font-family: 'Lora';
+}
+ 
+.action {
+	font-size: 1.25em;
+	color: #373684; 
+	font-weight: bold;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+/*Style rules for the gallery page, to make the images appear nicely side by side*/
+
+.gallery {
+	display: flex;
+	justify-content: space-around;
+}
+
+.gallery img {
+	flex: 1;
+	height: auto;
+	width: 34vw;
+	padding: 1% 1%;
+}
+
+/*Style rules for the iNaturalist page for tooltip and other things. Looked up 
+"how to format bootstrap tooltip" on google. Took me 2 hours of searching before
+I realised I was loading the scripts in the wrong order.*/
+
+.tooltip-inner {
+    background-color: #7c851c; 
+    color: #fff; 
+    font-size: 2vw;
+	max-width: 40vw;
+    border-radius: 1vw;
+	padding: 1vw 1vw;
+}
+
+.bigW {
+	font-size: 3.5vw;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+.iNat {
+	background-color: #e6b775;
+
+}
+
+.iNat2 {
+	background-color: #8f8e37;
+
+}
+
+.iNatImg {
+	height: auto;
+	width: 50vw;
+	height: inherit;
+	padding: 0;
+	margin: 0;
+	align-items: right;
+}
+
+.iNatWort {
+	max-width: 50%;
+	padding-top: 8%;
+	padding-right: 0%;
+}
+	
+.iNatWort h2 {
+	font-size: 3.5vw;
+}
+
+.iNatWort p {
+	font-size: 2vw;
+}
+
+.iNatAud {
+	max-width: 80%;
+	padding-left: 20%;
+	padding-right: 0%;
+
+
+}
+
+.iNatAud p{
+	font-size: 2vw;
+}
+
+.iNatAud audio{
+	padding: 0% 8%;
+}
+
+audio {
+	width: 30vw;
+}
+
+/*I set the width to 90%, and to preserve the original aspect ratio I made the height of the video a 
+function of its width based on the original pixel dimensions of the youtube video*/
+.iNatV {
+	width: 90%;
+	height: 50.65vw;
+	margin: 5%;
+}
+
+/*Style rules for the invasive page to make the layout how I want*/
+
+.invasive {
+	display: flex;
+	justify-content: space-around;
+}
+
+.invasive img {
+	flex: 1;
+	height: auto;
+	width: 30vw;
+	padding-top: 6%;
+}
+
+.invasive p {
+	flex: 1;
+	padding-top: 2.5%;
+	padding-right: 2%;
+}
+
+.small_list {
+	font-size: 2vw;
+	font-family: 'Roboto';
+	padding-left: 10%;
+}
+
+/*Looked up "how to make part of a sentence bold html css" on google.*/
+
+.bold {
+	font-weight: bold;
+	font-size: 2.7vw;
+}
+
+
+
+
+/*Style rule for the index class, used to make the images in the main 
+content in the index page the right size/like an inline block*/
+
+.index1 {
+	background-color: #b08942;
+	margin: 0;
+}
+
+.index2 {
+	background-color: #7c851c;
+	margin: 0;
+}
+
+.index1 img {
+	display: block;
+	height: auto;
+	width: 40vw; 			
+	height: auto;
+	padding: 0;
+	margin-left: 9vw;
+	align-items: right;
+}
+.index2 img {
+	display: block;
+	height: auto;
+	width: 40vw; 			
+	height: auto;
+	padding: 0;
+	margin: 0;
+	align-items: right;
+}
+
+
+	
+.index li {
+	list-style-type: none;
+	display: block;
+	flex: 1;
+	font-size: 2.3vw;
+	text-align: center;
+	padding: 0 3% ;
+	font-family: 'Lora';
+}
+
+.index1 a {
+	text-decoration: none;
+	color: #000;
+	max-width: 50%;
+	margin-top: 10%;
+	padding-top: 0%;
+	padding-right: 0%;
+	font-size: 2vw;
+}
+
+.idw {
+	margin-top: 15%;
+}
+
+.idi {
+	margin: 0;
+	padding: 0;
+}
+
+.index2 a {
+	text-decoration: none;
+	color: #000;
+	max-width: 50%;
+	margin-top: 10%;
+	padding-top: 0%;
+	padding-right: 0%;
+	font-size: 2vw;
+}
+
+.index1 a:hover {
+	color: #ffffff;
+	background-color: #b08942;
+}
+
+.index2 a:hover {
+	color: #ffffff;
+	background-color: #b08942;
+}
+
+/* Style rules for table elements */
+
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+	table-layout: fixed;    /*Looked up "how to make all table cells evenly spaced html"*/
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1%;
+	text-align: center;
+	color: #000;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 2% 0%;
+	text-align: center;
+	font-size: 1.2vw;
+    }
+th {
+    background-color: #886236;
+    color: #fff;
+    font-size: 1.5vw;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #b7b550;
+}
+tr:nth-child(odd) {
+    background-color: #b08942;
+}
+
+/*Style rules for form element*/
+
+form {
+	width: 100vw;
+	background-color: #e6b775;
+	margin: 0 auto;
+	overflow: clip;
+}
+
+#form h2 {
+	font-size: 2vw;
+	padding-top: 2%;
+}
+
+fieldset, input {
+	margin: auto;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.8vw;
+	padding-top: 2%;
+}
+
+label {
+	margin: auto;
+	padding-top: 2%;
+}
+
+form #submit {
+	margin: 0 auto;
+	display: block;
+	padding: 1% 0;
+	width: 10vw;
+	background-color: #7c851c;
+	color: #fff;
+	font-size: 1.7vw;
+}
+
+.subbutton {
+	padding: 1% auto;
+}
+
+
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 1.2vw;
+    clear: left;  
+	background-color: #886236;
+	margin: 0;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+
+
+
+
+
+/* Tablet Viewport: Show tab-desk class, hide mobile class */  
+
+	.tab-desk {
+	    display: block;
+	} 
+	.mobile {
+	    display: none;  
+	} 
+
+
+	
+/* Tablet Viewport: Style rule for header content */   
+
+	span.tab-desk {
+	    display: inline;
+	}
+/*Tablet Viewport: Style rules for nav area*/
+
+	nav li {
+		border-top: none;
+		display: inline-block;
+		font-size: 1.5em;
+		border-right: 1px solid #e5e9fc;
+	}
+
+	nav li a {
+		padding: 0.25em 0.5em;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+
+
+
+/*Tablet Viewport: Style rule for map*/
+
+	.map {
+		width: 500px;
+		height: 450px;
+	}
+
+}
+
+
+
+
+
+
+ /*Media Query for Desktop Viewport*/
+
+@media screen and (min-width: 769px), print {
+
+/*Desktop Viewport: Style rule for header*/
+
+	header {
+		padding: 0%;
+	}
+
+/*Desktop Viewport: Style rules for nav area*/
+
+	nav li a {
+		padding: 0.5em 1.5em;
+	}
+
+	nav li a:hover {
+		color: #7c851c;
+		background-color: #e5e9fc;
+	}
+
+/*Desktop Viewport: Style rules for main content*/
+
+	#info ul {
+		margin-left: 5%;
+	}
+
+	main h3 {
+		font-size: 1.5em;
+	}
+
+	#piano, #guitar, #violin {
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+
+}
+
+/* Media Query for Print. */
+
+@media print {
+
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+
+}

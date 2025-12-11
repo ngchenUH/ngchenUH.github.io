@@ -1,0 +1,162 @@
+<!--
+Final project template
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!--Bootstrap stylesheet-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--My stylesheet-->
+<link rel="stylesheet" href="css/styles.css">
+
+<!--Meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Lora and Roboto fonts, since I'm not sure what other fonts would look nice-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<title>iNaturalist information</title>
+
+</head>
+
+<body>
+
+<!--Mobile hamburger nav-->
+
+    <nav class="mobile mobile-nav">
+        <div id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="iNaturalist.html">iNaturalist</a>
+            <a href="invasive.html">Preserve</a>
+            <a href="garden.html">Garden</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <a class="menu-icon" onclick="borgar()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+
+<!--Header content, different headers will appear for mobile/tablet and desktop-->
+
+    <header>
+            <div id="header1" class="tab-desk">
+                <a href="index.html"><img src="images/hero.jpg" alt="Kalij pheasant"></a>
+            </div>
+
+            <div id="header2" class="mobile">
+                <h1>Connect with Hawaii</h1>
+            </div>
+    </header>
+
+<!--Desktop nav-->
+
+    <nav class="tab-desk">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="iNaturalist.html">iNaturalist</a></li>
+        <li><a href="invasive.html">Preserve</a></li>
+        <li><a href="garden.html">Garden</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 class="bigW">What is iNaturalist?</h1>
+
+        <p>iNaturalist is, in their own words,  “An online social network of people sharing biodiversity information to help each other learn about nature”.</p>
+
+        <!--Did a lot of research to learn how to make a good jumbotron with an image in it-->
+
+        <div class="jumbotron jumbotron-fluid p-0 iNat mb-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col iNatWort">
+                        <h2>What does iNaturalist do?</h2>
+                        <p>The goal of iNaturalist is to collect observations of plants and animals to help people connect to nature as well as assist with research and conservation efforts. Observations can be visual, such as this photos of an ‘I’iwi bird by argonauta on iNaturalist.</p>
+                    </div>
+                    <div class="col iNatImg">
+                        <img src="images/iiwi1.jpg" alt="An I'iwi bird">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+ 
+        <div class="jumbotron jumbotron-fluid p-0 iNat2 mt-0">
+            <div class="container-fluid align-items-center">
+                <div class="row iNatAud">
+                    <div class="col d-flex justify-content-center">  
+                        <p class="align-items-center">Observations can also be audial, such as this recording of a Red-masked Parakeet by moventrice or this recording of an ‘I’iwi bird by kcballantyne on iNaturalist.</p>
+                    </div>
+                </div>        
+                <div class="row">
+                    <div class="col d-flex justify-content-center">     
+                        <audio controls class="">
+                        <source src="audio/rmparkit.mp3" type="audio/mp3">
+                        <source src="audio/rmparkit.ogg" type="audio/ogg">
+                        <p>The birds are quiet because your browser hates them :(</p>
+                        </audio>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <audio controls class="">
+                        <source src="audio/iiwi.mp3" type="audio/mp3">
+                        <source src="audio/iiwi.ogg" type="audio/ogg">
+                        <p>The birds are quiet because your browser hates them :(</p>
+                        </audio>
+                    </div>
+                </div>  
+                
+            </div>
+        </div>
+
+        <!--Used inspect element on iNaturalist page to disect how their formatting works and figure 
+        out how to emulate some of that for my page-->
+
+
+        <p class="mb-0 pb-0">Watch this video to learn more about iNaturalist and urban wildlife biologist Sam Kieschnick’s experience using iNaturalist over the years!</p>
+    <!--I initially struggled to figure out how to embed a youtube video, until I learned from the internet
+    that there's an embed feature for the share button on youtube.-->
+
+        <iframe class="iNatV" src="https://www.youtube.com/embed/ap1aLIVbxh8?si=BRyVc9W5jUQuMGcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p class="bigW">By adding observations or identifying species within other’s observations, you can directly contribute to the understanding of our local ecosystem!</p>
+
+        <a href="https://www.inaturalist.org/" data-toggle="tooltip" data-placement="top" data-bs-html="true" title="Click to visit the iNaturalist website!"><img src="images/iNaturalist_logo_long.png" alt="iNaturalist logo"></a>
+
+
+    </main>
+
+    <footer>
+
+<!--Copyright footer, unsure if I need this since most of this is my own pictures-->
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+
+    </footer>
+
+<!--Bootstrap javascript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--Script to enable hamburger function, I forgot to include this and was wondering why my function wasn't working-->
+
+    <script src="scripts/borgar.js"></script>
+
+<!--Script to enable tooltips for the image-->
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+            template: '<div class="tooltip my-custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+        });
+    });
+    </script>
+</body>
+
+</html>
